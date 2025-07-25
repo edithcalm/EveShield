@@ -18,4 +18,8 @@ function getLocation() {
     output.innerText = "Geolocation not supported.";
   }
 }
+ 
+document.getElementById('sos-button').addEventListener('click', sendSOS);
+document.getElementById('location-button').addEventListener('click', getLocation);    
+
 
