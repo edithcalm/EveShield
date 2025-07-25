@@ -1,0 +1,21 @@
+function sendSOS() {
+  alert('SOS Alert sent to emergency contacts!');
+  // In a real app, this would use axios:
+  // axios.post('/api/sos', {...})
+}
+
+function getLocation() {
+  const output = document.getElementById('location-output');
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition((position) => {
+      const { latitude, longitude } = position.coords;
+      output.innerHTML = `Latitude: ${latitude}, Longitude: ${longitude}`;
+  
+    }, () => {
+      output.innerText = "Unable to retrieve your location.";
+    });
+  } else {
+    output.innerText = "Geolocation not supported.";
+  }
+}
+
