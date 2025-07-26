@@ -100,10 +100,6 @@ See below for a summary of key files and directories:
 3. Make your changes and submit a pull request.
 4. Ensure your code is well-documented and tested.
 
-## License
-
-MIT
-
 ## Contact
 
 For questions or support, open an issue or contact the maintainers.
