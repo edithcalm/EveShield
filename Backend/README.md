@@ -100,6 +100,8 @@ python manage.py runserver
 
 You can now access the API at: `http://localhost:8000/api/`
 
+You can now access the API at: `http://localhost:8000/api/`
+
 ---
 
 ## 📡 API Design Overview
@@ -111,6 +113,9 @@ All endpoints are under the `/api/` prefix. Auth is handled via JWT.
 - `POST /api/users/auth/register/`
 - `POST /api/users/auth/login/`
 - `POST /api/users/auth/logout/`
+
+For further Authentication Description:
+[Authentication Guide](/Backend/authentication_guide.md)
 
 ### 👤 Onboarding
 
