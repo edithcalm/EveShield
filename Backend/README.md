@@ -108,9 +108,9 @@ All endpoints are under the `/api/` prefix. Auth is handled via JWT.
 
 ### 🔐 Auth
 
-- `POST /api/auth/register/`
-- `POST /api/auth/login/`
-- `POST /api/auth/logout/`
+- `POST /api/users/auth/register/`
+- `POST /api/users/auth/login/`
+- `POST /api/users/auth/logout/`
 
 ### 👤 Onboarding
 
