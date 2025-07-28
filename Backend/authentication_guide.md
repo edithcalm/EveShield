@@ -26,7 +26,7 @@ Value:  Token <your-auth-token>
 **Endpoint:**
 
 ```http
-POST /api/users/register/
+POST /api/users/auth/register/
 ```
 
 **Description:**  
@@ -63,7 +63,7 @@ Creates a new user and returns a token for authentication.
 **Endpoint:**
 
 ```http
-POST /api/users/login/
+POST /api/users/auth/login/
 ```
 
 **Description:**  
@@ -99,7 +99,7 @@ Authenticates the user and returns a token.
 **Endpoint:**
 
 ```http
-GET /api/users/logout/
+GET /api/users/auth/logout/
 ```
 
 **Description:**  
