@@ -36,9 +36,9 @@ Creates a new user and returns a token for authentication.
 
 ```json
 {
-  "username": "example_user",
-  "email": "user@example.com",
-  "password": "securepassword"
+  "phone_number": "+254712345678",
+  "username": "Test User",
+  "password": "password123"
 }
 ```
 
@@ -47,11 +47,7 @@ Creates a new user and returns a token for authentication.
 ```json
 {
   "message": "New user registration successful!",
-  "user": {
-    "id": 1,
-    "username": "example_user",
-    "email": "user@example.com"
-  },
+
   "token": "generated-authentication-token"
 }
 ```
@@ -82,13 +78,15 @@ Authenticates the user and returns a token.
 
 ```json
 {
-  "message": "user logged in successfully!",
+  "tokens": {
+    "access": "JWT_ACCESS_TOKEN",
+    "refresh": "JWT_REFRESH_TOKEN"
+  },
   "user": {
     "id": 1,
-    "username": "example_user",
-    "email": "user@example.com"
-  },
-  "token": "generated-authentication-token"
+    "username": "Test User",
+    "phone_number": "+254712345678"
+  }
 }
 ```
 
