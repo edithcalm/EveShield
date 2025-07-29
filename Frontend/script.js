@@ -1,7 +1,6 @@
 function sendSOS() {
   alert('SOS Alert sent to emergency contacts!');
-  // In a real app, this would use axios:
-  // axios.post('/api/sos', {...})
+  
 }
 
 function getLocation() {
@@ -17,6 +16,8 @@ function getLocation() {
   } else {
     output.innerText = "Geolocation not supported.";
   }
+
+
 }
  
 document.getElementById('sos-button').addEventListener('click', sendSOS);
